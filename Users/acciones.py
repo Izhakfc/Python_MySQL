@@ -40,7 +40,7 @@ class Acciones():
                    print(f'\nBienvenido {login[1]} has iniciado sesión con el correo {login[3]}')
                    self.posterior_actions(login)
                
-           except ZeroDivisionError as e:
+           except Exception as e:
                print(type(e))
                print(type(e).__name__)
                print('Email o contraseña incorrecta! Intentar de nuevo')
